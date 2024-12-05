@@ -25,16 +25,7 @@
   max-width: 1440px;
   margin: auto;
 }
-.banner {
-  height: 100vh;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 1024px;
-}
-/* .navbar > .logo > .logo__dark {
-  display: none;
-} */
+
 /* navbar style start  */
 .navbar {
   padding: 25px 80px;
@@ -46,31 +37,85 @@
   width: 108px;
   height: 32px;
 }
-.logo__dark{
+.logo__dark {
   display: none;
 }
 .navbar ul {
   display: flex;
-  
 }
-.navbar ul li a{
+.navbar ul li a {
   color: var(--color-white);
   padding: 4px 12px;
 }
 .navbar ul li a:hover,
-.navbar ul li a.active
-{
+.navbar ul li a.active {
   color: var(--color-deep);
 }
-.navbar button{
+.navbar button {
   padding: 10px 18px;
   color: var(--color-dark);
   border-radius: 12px;
   cursor: pointer;
 }
-.navbar button:hover{
+.navbar button:hover {
   color: #70707b;
 }
-.navbar .hamburger{
+.navbar .hamburger {
   display: none;
+}
+/* banner content style  */
+.banner {
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 924px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.banner__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.banner__content .images {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid var(--color-deep);
+  border-radius: 20px;
+  padding: 8px;
+  gap: 15px;
+  margin: 55px;
+}
+.banner__content .images .image{
+  width: 196px;
+  height: 140px;
+}
+.banner__content__title .banner__content__title__text p {
+  font-size: 4.5rem;
+  color: var(--color-white);
+  display: inline-block;
+  font-weight: 300;
+}
+.banner__content__title .banner__content__title__text p span {
+  color: var(--color-white);
+  font-weight: 600;
+}
+.banner__content__title {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.banner__content__title .banner__content__title__text {
+  display: grid;
+  padding-block-end: 100px;
+  padding-inline-start: 40px;
+}
+.banner__content__title__img {
+  display: inline;
+  border: 2px solid var(--color-gray);
+  border-radius: 60px;
+  padding: 15px;
+  margin-block-end: 120px;
 }

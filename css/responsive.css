@@ -23,9 +23,8 @@
     justify-content: flex-start;
     height: 100vh;
   }
-  .navbar.active{
+  .navbar.active {
     background-color: #fff;
-
   }
   .logo {
     display: flex;
@@ -34,13 +33,13 @@
     width: 100%;
     padding: 20px;
   }
-  .navbar ul{
+  .navbar ul {
     display: none;
   }
-  .navbar button{
+  .navbar button {
     display: none;
   }
-  .navbar.active button{
+  .navbar.active button {
     display: block;
   }
   .navbar.active ul {
@@ -48,47 +47,88 @@
     flex-direction: column;
     gap: 15px;
   }
-  .navbar ul li a{
+  .navbar ul li a {
     color: var(--color-dark);
   }
-  .navbar button {
+  .btn {
     background-color: var(--color-dark);
     color: var(--color-white);
-}
-.navbar .hamburger {
-  display: block;
-}
+  }
+  .navbar .hamburger {
+    display: block;
+  }
 
-.navbar .logo .logo__dark {
-display: none;
-}
-.navbar.active .logo .logo__dark {
-display: block;
-}
-.navbar.active .logo .logo__light {
-  display: none;
-}
-.navbar .logo .logo__light {
-  display: block;
-}
-.navbar .logo .hamburger .open {
-  display: block;
-}
-.navbar.active .logo .hamburger .open {
-  display: none;
-}
-.navbar .logo .hamburger .close {
-  display: none;
-}
-.navbar.active .logo .hamburger .close {
-  display: block;
-}
+  .navbar .logo .logo__dark {
+    display: none;
+  }
+  .navbar.active .logo .logo__dark {
+    display: block;
+  }
+  .navbar.active .logo .logo__light {
+    display: none;
+  }
+  .navbar .logo .logo__light {
+    display: block;
+  }
+  .navbar .logo .hamburger .open {
+    display: block;
+  }
+  .navbar.active .logo .hamburger .open {
+    display: none;
+  }
+  .navbar .logo .hamburger .close {
+    display: none;
+  }
+  .navbar.active .logo .hamburger .close {
+    display: block;
+  }
+  .banner {
+    height: 80vh;
+  }
+  .banner__content .images {
+    display: none;
+  }
+  .banner__content__title .banner__content__title__text p {
+    font-size: 1.6rem;
+  }
+  .banner__content__title__img {
+    border-radius: 30px;
+    padding: 10px;
+    margin-block-end: 91px;
+  }
 }
 /* Medium Devices (500px to 1024px) */
 @media only screen and (min-width: 500px) and (max-width: 1024px) {
   .container {
-    border-inline: 48px solid #fff;
-    max-width: 1024px;
+    border-inline: 20px solid #fff;
     margin: auto;
+  }
+  .banner__content .images {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid var(--color-deep);
+    border-radius: 20px;
+    padding: 8px;
+    gap: 15px;
+    margin: 55px;
+  }
+  .banner__content .images .image {
+    width: 154px;
+    height: 110px;
+  }
+  .banner__content__title .banner__content__title__text p {
+    font-size: 3rem;
+  }
+
+  .banner__content__title {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+  }
+
+  .banner__content__title__img {
+    border-radius: 60px;
+    padding: 15px;
+    margin-block-end: 90px;
   }
 }
