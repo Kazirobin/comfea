@@ -135,6 +135,7 @@
   }
   .footer__top {
     gap: 0px;
+    flex-direction: column;
   }
   .footer__bottom {
     flex-direction: column;
@@ -145,6 +146,10 @@
   .footer__bottom .logo {
     display: flex;
     justify-content: center;
+  }
+  .navigate:last-child .links .links__box{
+    display: flex;
+    flex-direction: row;
   }
   /* faq style  */
   .faq{
@@ -216,6 +221,15 @@
   }
   .arrow-2 .left{
     display: none;
+  }
+  /* contact style  */
+  .contact{
+    flex-direction: column;
+    padding-block-start: 40px;
+  }
+  .contact__from{
+    width: calc(100% - 40px);
+    margin-block: 40px;
   }
 }
 
