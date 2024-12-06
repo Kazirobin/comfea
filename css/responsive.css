@@ -34,6 +34,7 @@
     background-color: #fff;
     padding-block-end: 30px;
   }
+ 
   .logo {
     display: flex;
     justify-content: space-between;
@@ -89,6 +90,14 @@
     display: none;
   }
   .navbar.active .logo .hamburger .close {
+    display: block;
+  }
+  /* navbar dark  */
+ 
+  .navbar.dark.active .logo__light{
+    display: block;
+  }
+  .navbar.dark.active .logo__dark{
     display: block;
   }
   .banner {
@@ -232,6 +241,11 @@
   .contact__from{
     width: calc(100% - 40px);
     margin-block: 40px;
+  }
+  /* about section  */
+  /* states  */
+  .states{
+    grid-template-columns: 1fr;
   }
 }
 

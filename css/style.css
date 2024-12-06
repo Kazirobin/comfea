@@ -64,6 +64,8 @@ a:hover,
 a.active {
   color: var(--color-deep);
 }
+
+.navbar.dark .btn:hover,
 .btn {
   padding: 10px 18px;
   font-weight: 700;
@@ -74,6 +76,7 @@ a.active {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
+.navbar.dark .btn,
 .btn:hover {
   background-color: var(--color-dark);
   color: var(--color-white);
@@ -104,7 +107,28 @@ a.active {
 .navbar .hamburger {
   display: none;
 }
-
+/* navbar dark  */
+.dark.navbar{
+  height: 80px;
+}
+.dark.navbar.active{
+  height: 80vh;
+}
+.dark .logo{
+  height: auto;
+}
+.dark .logo__light{
+  display: block;
+}
+.dark .logo__dark{
+  display: flex;
+}
+.navbar.dark a{
+  color: var(--color-dark);
+}
+.navbar.dark a:hover{
+  color: var(--color-deep);
+}
 /* footer style  */
 /* padding margin gap  */
 footer {
@@ -268,7 +292,6 @@ footer {
   overflow: hidden;
   grid-template-columns: 1fr 1.1fr 1.5fr;
 }
-
 .discover-card-container .discover-card {
   height: 500px;
   gap: 10px;
@@ -282,7 +305,6 @@ footer {
   display: inline;
   width: 100%;
 }
-
 /* property section  */
 .property {
   padding: 20px;
@@ -357,9 +379,6 @@ footer {
 }
 .property-card__details,
 .property-card__features {
-  /* height: 0;
-  opacity: 0;
-  display: none; */
   transition: all 0.3s ease-in-out;
 }
 .property-card:hover .property-card__details,
@@ -368,7 +387,6 @@ footer {
   opacity: 1;
   display: flex;
 }
-
 /* FAQ style  */
 .faq {
   padding: 40px;
@@ -390,7 +408,6 @@ footer {
 .question {
   padding: 16px;
 }
-
 .question.active .question-title .collapse .minus {
   display: none;
 }
@@ -459,7 +476,6 @@ footer {
 .time .clock {
   display: flex;
 }
-
 /* pagination style  */
 .pagination {
   display: flex;
@@ -527,22 +543,21 @@ footer {
   background-repeat: no-repeat;
   border-radius: 22px;
 }
-.contact__details{
+.contact__details {
   display: flex;
   flex-direction: column;
   padding-inline: 20px;
 }
-.contact__details h1{
+.contact__details h1 {
   font-size: 3rem;
   max-width: 500px;
   color: var(--color-white);
 }
-.contact__details p{
+.contact__details p {
   padding-block: 10px;
   font-size: 1rem;
   max-width: 650px;
 }
-
 .contact__from {
   width: 570px;
   margin: 110px 40px;
@@ -563,10 +578,22 @@ footer {
   margin: auto;
   border: 1px solid var(--color-deep);
 }
-input::placeholder{
+input::placeholder {
   color: var(--color-dark);
-
 }
-.contact__from .btn{
+.contact__from .btn {
   margin-block-start: 12px;
+}
+/* about section  */
+/* states style  */
+.states{
+  display: grid;
+  place-items: center;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+}
+.state .title{
+  display: flex;
+  padding: 10px;
+  justify-content: center;
 }
