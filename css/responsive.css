@@ -115,6 +115,12 @@
     padding-block: 20px;
   }
 
+  /* property-card-container  */
+  .property-card__img {
+    height: 400px;}
+    .property-card__details {
+      padding: 0px;
+    }
    /* footer style  */
   footer {
     padding: 20px;
