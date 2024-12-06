@@ -36,21 +36,29 @@ h2 {
 }
 p {
   font-size: 0.9rem;
+  font-weight: 400;
   color: var(--color-deep);
 }
 p.light {
   color: var(--color-light);
 }
 p.bold {
+  color: var(--color-gray);
+  font-weight: 600;
+}
+p.bold:hover 
+
+{
   color: var(--color-dark);
-  font-weight: 700;
 }
 p.bolder {
   font-size: 1.1rem;
+  line-height: 2rem;
   color: var(--color-dark);
   font-weight: 600;
 }
 a {
+  font-weight: 400;
   color: var(--color-white);
   padding: 4px 12px;
 }
@@ -235,10 +243,11 @@ footer {
 /* discover section  */
 .discover {
   padding: 40px;
+  padding-block-end: 0px;
 }
 .discover__top .title {
   width: 380px;
-  padding-block-end: 20px;
+  padding-block-end: 40px;
 }
 .discover__top .title h1 {
   padding-block-end: 30px;
@@ -283,6 +292,11 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+}
+.property .title h1{
+  padding-block-end: 20px;
+
 }
 .property button{
   margin: auto;
