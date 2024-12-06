@@ -10,6 +10,18 @@
 
 /* Extra Small Devices (phones, 375px and down) */
 @media only screen and (max-width: 375px) {
+
+}
+/* Medium Devices (500px to 1024px) */
+@media only screen and (min-width: 500px) and (max-width: 1024px) {
+
+}
+/* Responsive Styles */
+
+
+
+/* Small Devices (portrait tablets and large phones, 600px to 767px) */
+@media only screen  and (max-width: 767px) {
   .container {
     border-inline: 0px solid #fff;
     width: 100%;
@@ -22,9 +34,11 @@
     align-items: center;
     justify-content: flex-start;
     height: 100vh;
+    transition: all 1s ease-in;
   }
   .navbar.active {
     background-color: #fff;
+    padding-block-end: 30px;
   }
   .logo {
     display: flex;
@@ -35,9 +49,13 @@
   }
   .navbar ul {
     display: none;
+    transition: all 1s ease-in;
+
   }
   .navbar button {
     display: none;
+    transition: all 1s ease-in;
+
   }
   .navbar.active button {
     display: block;
@@ -50,7 +68,7 @@
   .navbar ul li a {
     color: var(--color-dark);
   }
-  .btn {
+  .navbar .btn {
     background-color: var(--color-dark);
     color: var(--color-white);
   }
@@ -97,8 +115,9 @@
     margin-block-end: 91px;
   }
 }
-/* Medium Devices (500px to 1024px) */
-@media only screen and (min-width: 500px) and (max-width: 1024px) {
+
+/* Medium Devices (landscape tablets, 768px to 991px) */
+@media only screen and (min-width: 768px)  and (max-width: 1199px) {
   .container {
     border-inline: 20px solid #fff;
     margin: auto;
@@ -132,3 +151,4 @@
     margin-block-end: 90px;
   }
 }
+

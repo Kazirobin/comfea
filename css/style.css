@@ -53,6 +53,7 @@
 }
 .navbar button {
   padding: 10px 18px;
+  font-weight: 700;
   color: var(--color-dark);
   border-radius: 12px;
   cursor: pointer;
