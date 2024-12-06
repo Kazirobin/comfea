@@ -9,11 +9,10 @@
 
 /* Responsive Styles */
 
-
-
 /* Small Devices (portrait tablets and large phones, 600px to 767px) */
-@media only screen  and (max-width: 767px) {
-  p,a{
+@media only screen and (max-width: 767px) {
+  p,
+  a {
     font-size: 0.8rem;
   }
   .container {
@@ -45,12 +44,10 @@
   .navbar ul {
     display: none;
     transition: all 0.3s ease-in;
-
   }
   .navbar button {
     display: none;
     transition: all 0.3s ease-in;
-
   }
   .navbar.active button {
     display: block;
@@ -108,11 +105,11 @@
   }
 
   /* discover style  */
-  .discover__bottom .discover-card-container{
+  .discover__bottom .discover-card-container {
     display: flex;
     flex-direction: column;
   }
-  .discover__bottom .discover-card-container .discover-card{
+  .discover__bottom .discover-card-container .discover-card {
     height: auto;
     text-align: center;
     padding-block: 20px;
@@ -120,11 +117,12 @@
 
   /* property-card-container  */
   .property-card__img {
-    height: 300px;}
-    .property-card__details {
-      padding: 0px;
-    }
-   /* footer style  */
+    height: 300px;
+  }
+  .property-card__details {
+    padding: 0px;
+  }
+  /* footer style  */
   footer {
     padding: 20px;
   }
@@ -138,20 +136,81 @@
   .footer__top {
     gap: 0px;
   }
-  .footer__bottom{
+  .footer__bottom {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 15px;
   }
-  .footer__bottom .logo{
+  .footer__bottom .logo {
     display: flex;
     justify-content: center;
+  }
+  /* faq style  */
+  .faq{
+    flex-direction: column;
+    padding-block-end: 0px;
+  }
+  .faq__describe ,
+  .questions
+  {
+    width: 100%;
+  }
+  .faq__describe img{
+    display: none;
+  }
+  .faq__describe h1{
+    width: 100%;
+  }
+  .question{
+    padding-inline-start: 0px;
+  }
+  /* tips style  */
+  .tips__blog{
+    padding-block-start: 0px;
+  }
+  .tips__title h1:first-child{
+    display: none;
+  }
+  .tips__title h1:nth-last-child(2){
+    padding-block-end: 20px;
+    display: block;
+  }
+  .tips__title{
+    flex-direction: column;
+  }
+  .tips-card-container {
+    display: grid;
+    grid-template-columns: 1fr  ;
+  }
+  .tips-card-container .tips-card:last-child{
+    display: none;
+  }
+  .tips-card{
+    flex-direction: row;
+  }
+  .tips-card__detail{
+    padding-block: 10px;
+  }
+  .tips-card .tips-card-img{
+    width: 120px;
+    padding: 5px;
+    border-radius: 12px;
+  }
+  .tips-card__detail p.bolder{
+    line-height: 1.4rem;
+    padding-block: 10px;
+  }
+  .clock{
+    display: flex;
+  }
+  .time .clock{
+    display: none;
   }
 }
 
 /* Medium Devices (landscape tablets, 768px to 991px) */
-@media only screen and (min-width: 768px)  and (max-width: 1199px) {
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
   .container {
     border-inline: 20px solid #fff;
     margin: auto;
@@ -185,35 +244,66 @@
     margin-block-end: 90px;
   }
   /* discover section style  */
-.discover__top {
-  flex-direction: column;
-}
-.discover__top .title{
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.discover__top .title h1{
-  width: 70%;
-}
-.discover__top .text{
-  width: 100%;
+  .discover__top {
+    flex-direction: column;
+  }
+  .discover__top .title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .discover__top .title h1 {
+    width: 70%;
+  }
+  .discover__top .text {
+    width: 100%;
+  }
 
-}
+  /* faq style */
+  .faq {
+    flex-direction: column;
+  }
+  .faq__describe h1{
+    width: 100%;
+  }
+  .faq__describe,
+  .questions{
+    width: 100%;
+  }
 
-
-  /* footer style  */
-  .footer__top{
+  /* tips style  */
+  .tips__blog {
+    padding: 40px;
+  }
+  .tips-card-container {
+    column-gap: 40px;
+  }
+  .tips__title {
+    padding-block-end: 40px;
+  }
+  .tips__title {
+    display: flex;
     justify-content: space-between;
   }
-  .navigate:last-child{
+  .tips__title h1 {
+    width: 100%;
+  }
+  .tips-card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+  }
+  .tips-card-container .tips-card:last-child{
+    display: none;
+  }
+  /* footer style  */
+  .footer__top {
+    justify-content: space-between;
+  }
+  .navigate:last-child {
     margin-inline-end: 200px;
   }
   footer {
     padding: 20px;
   }
-
-  
 }
-

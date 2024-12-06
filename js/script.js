@@ -5,6 +5,12 @@ hamburger.addEventListener("click",() => {
     nav.classList.toggle('active')
 });
 
-//for FAQ toggle
-const question = document.querySelector('.question');
-const questionTitle = document.querySelector('.question-title');
+//faq question collapse
+const questionTitles = document.querySelectorAll('.question-title');
+
+questionTitles.forEach((title) => {
+    title.addEventListener("click", () => {
+        const question = title.closest('.question'); 
+        question.classList.toggle('active');
+    });
+});
