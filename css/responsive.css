@@ -207,6 +207,16 @@
   .time .clock{
     display: none;
   }
+  /* pagination style  */
+  .arrow-1{
+    display: flex;
+  }
+  .arrow-1 .right{
+    display: none;
+  }
+  .arrow-2 .left{
+    display: none;
+  }
 }
 
 /* Medium Devices (landscape tablets, 768px to 991px) */

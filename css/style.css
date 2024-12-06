@@ -457,3 +457,61 @@ display: none;}
 .time .clock{
   display: flex;
 }
+
+
+/* pagination style  */
+.pagination{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+}
+.page__points{
+  display: flex;
+}
+.page__point{
+  border: 2px solid var(--color-gray);
+  border-radius: 12px;
+  padding: 10px;
+  margin: 14px 8px;
+  cursor: pointer;
+}
+.page__point.active {
+  background-color: var(--color-dark);
+  border: 2px solid var(--color-dark);
+}
+.arrow-1{
+  display: none;
+}
+.arrow-2{
+  display: flex;
+}
+.arrow-icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 80px;
+  position: relative;
+  cursor: pointer;
+}
+.arrow-2 .arrow-icon{
+  position: absolute;
+  right: 0;
+cursor: pointer;
+}
+.arrow-1 .arrow-icon{
+  position: absolute;
+  left: 0;
+cursor: pointer;
+
+}
+.arrow-icons .arrow-icon.dark{
+  display: none;
+}
+.arrow-icons:hover  .arrow-icon.light{
+  display: none;
+}
+.arrow-icons:hover  .arrow-icon.dark{
+  display: block;
+}
