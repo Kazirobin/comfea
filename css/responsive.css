@@ -60,11 +60,13 @@
   .navbar ul li a {
     color: var(--color-dark);
   }
-
   .navbar .hamburger {
     display: block;
   }
+  .navbar .hamburger img{
+    cursor: pointer;
 
+  }
   .navbar .logo .logo__dark {
     display: none;
   }
