@@ -129,6 +129,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  gap: 20px;
   padding-block-end: 50px;
   border-bottom: 3px solid var(--color-deep);
 }
