@@ -13,6 +13,9 @@
 
 /* Small Devices (portrait tablets and large phones, 600px to 767px) */
 @media only screen  and (max-width: 767px) {
+  p,a{
+    font-size: 0.8rem;
+  }
   .container {
     border-inline: 0px solid #fff;
     width: 100%;
@@ -117,7 +120,7 @@
 
   /* property-card-container  */
   .property-card__img {
-    height: 400px;}
+    height: 300px;}
     .property-card__details {
       padding: 0px;
     }
