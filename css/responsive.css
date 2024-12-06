@@ -6,16 +6,7 @@
   --color-deep: #a3a3a4;
   --color-gray: #70707b;
 }
-/* Responsive Styles */
 
-/* Extra Small Devices (phones, 375px and down) */
-@media only screen and (max-width: 375px) {
-
-}
-/* Medium Devices (500px to 1024px) */
-@media only screen and (min-width: 500px) and (max-width: 1024px) {
-
-}
 /* Responsive Styles */
 
 
@@ -29,6 +20,7 @@
   }
   .navbar {
     padding: 0px;
+    padding-block-start: 20px;
     flex-direction: column;
     gap: 30px;
     align-items: center;
@@ -68,10 +60,7 @@
   .navbar ul li a {
     color: var(--color-dark);
   }
-  .navbar .btn {
-    background-color: var(--color-dark);
-    color: var(--color-white);
-  }
+
   .navbar .hamburger {
     display: block;
   }
@@ -114,7 +103,19 @@
     padding: 10px;
     margin-block-end: 91px;
   }
-  /* footer style  */
+
+  /* discover style  */
+  .discover__bottom .discover-card-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .discover__bottom .discover-card-container .discover-card{
+    height: auto;
+    text-align: center;
+    padding-block: 20px;
+  }
+
+   /* footer style  */
   footer {
     padding: 20px;
   }
@@ -174,6 +175,25 @@
     padding: 15px;
     margin-block-end: 90px;
   }
+  /* discover section style  */
+.discover__top {
+  flex-direction: column;
+}
+.discover__top .title{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.discover__top .title h1{
+  width: 70%;
+}
+.discover__top .text{
+  width: 100%;
+
+}
+
+
   /* footer style  */
   .footer__top{
     justify-content: space-between;
@@ -184,6 +204,7 @@
   footer {
     padding: 20px;
   }
+
   
 }
 

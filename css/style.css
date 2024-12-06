@@ -32,10 +32,10 @@ h1 {
 }
 h2 {
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 500;
 }
 p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: var(--color-deep);
 }
 p.light {
@@ -53,8 +53,22 @@ a:hover,
 a.active {
   color: var(--color-deep);
 }
-/* navbar style start  */
+.btn {
+  padding: 10px 18px;
+  font-weight: 700;
+  color: var(--color-dark);
+  background-color: var(--color-light);
+  border: 1px solid var(--color-dark);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.btn:hover {
+  background-color: var(--color-dark);
+  color: var(--color-white);
+}
 
+/* navbar style start  */
 .navbar {
   padding: 25px 80px;
   display: flex;
@@ -72,22 +86,11 @@ a.active {
   display: flex;
 }
 
-.navbar button {
-  padding: 10px 18px;
-  font-weight: 700;
-  color: var(--color-dark);
-  border-radius: 12px;
-  cursor: pointer;
-}
-.navbar button:hover {
-  color: #70707b;
-}
 .navbar .hamburger {
   display: none;
 }
 
 /* banner content style  */
-
 .banner {
   height: 100vh;
   background-position: center;
@@ -143,6 +146,71 @@ a.active {
   padding: 15px;
   margin-block-end: 120px;
 }
+
+/* discover section  */
+.discover {
+  padding: 40px;
+}
+.discover__top .title {
+  width: 380px;
+  padding-block-end: 20px;
+}
+.discover__top .title h1 {
+  padding-block-end: 30px;
+}
+.discover__top .text p {
+  padding-block-end: 20px;
+}
+.discover .discover__top {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+.discover__top .text {
+  width: 600px;
+}
+.discover__bottom .discover-card-container {
+  display: grid;
+  column-gap: 20px;
+  overflow: hidden;
+  grid-template-columns: 1fr 1.1fr 1.5fr;
+}
+
+.discover-card-container .discover-card {
+  height: 500px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.discover-card-container .discover-card:nth-child(2) {
+  justify-content: flex-end;
+}
+.discover-card-container .discover-card img {
+  display: inline;
+  width: 100%;
+}
+
+/* property section  */
+.property .title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.property .title p{
+  width: 600px;
+}
+.property-card-container{
+  display: flex;
+}
+.property-card{
+  height: 500px;
+}
+.property-card__img p{
+  background-color: var(--color-dark);
+  display: flex;
+  align-items: center;
+}
+
 /* footer style  */
 /* padding margin gap  */
 footer {
@@ -167,8 +235,8 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-block-end:50px ;
-  border-bottom:3px solid var(--color-deep) ;
+  padding-block-end: 50px;
+  border-bottom: 3px solid var(--color-deep);
 }
 footer {
   background-color: var(--color-dark);
@@ -200,10 +268,10 @@ footer {
 .footer__top .navigate a {
   padding-left: 0px;
 }
-.footer__bottom *{
+.footer__bottom * {
   background-color: var(--color-dark);
 }
-.footer__bottom{
+.footer__bottom {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -211,7 +279,7 @@ footer {
   margin-block-start: 10px;
   padding-block: 20px;
 }
-.footer__bottom .top button a{
+.footer__bottom .top button a {
   display: flex;
   align-items: center;
   gap: 5px;
