@@ -26,6 +26,7 @@
   border-inline: 80px solid #fff;
   max-width: 1440px;
   margin: auto;
+  text-align: center;
 }
 /* typography */
 h1 {
@@ -68,6 +69,7 @@ a.active {
 }
 .text-center{
   text-align: center;
+  margin:auto;
 }
 
 .navbar.dark .btn:hover,
