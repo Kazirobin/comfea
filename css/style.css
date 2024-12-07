@@ -1,3 +1,5 @@
+/* here i define some common grid layout  */
+@import url('./grid_layout.css');
 /* this css apply for large device  */
 @import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 
@@ -63,6 +65,9 @@ a {
 a:hover,
 a.active {
   color: var(--color-deep);
+}
+.text-center{
+  text-align: center;
 }
 
 .navbar.dark .btn:hover,
