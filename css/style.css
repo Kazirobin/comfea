@@ -1,5 +1,5 @@
 /* here i define some common grid layout  */
-@import url('./grid_layout.css');
+@import url("./grid_layout.css");
 /* this css apply for large device  */
 @import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 
@@ -26,7 +26,6 @@
   border-inline: 80px solid #fff;
   max-width: 1440px;
   margin: auto;
-  text-align: center;
 }
 /* typography */
 h1 {
@@ -58,6 +57,9 @@ p.bolder {
   color: var(--color-dark);
   font-weight: 600;
 }
+.title h1 {
+  font-size: 3rem;
+}
 a {
   font-weight: 400;
   color: var(--color-white);
@@ -67,11 +69,13 @@ a:hover,
 a.active {
   color: var(--color-deep);
 }
-.text-center{
+.text-center {
   text-align: center;
-  margin:auto;
+  margin: auto;
 }
-
+.m-top-40 {
+  margin-block-start: 40px;
+}
 .navbar.dark .btn:hover,
 .btn {
   padding: 10px 18px;
@@ -115,25 +119,25 @@ a.active {
   display: none;
 }
 /* navbar dark  */
-.dark.navbar{
+.dark.navbar {
   height: 80px;
 }
-.dark.navbar.active{
+.dark.navbar.active {
   height: 80vh;
 }
-.dark .logo{
+.dark .logo {
   height: auto;
 }
-.dark .logo__light{
+.dark .logo__light {
   display: block;
 }
-.dark .logo__dark{
+.dark .logo__dark {
   display: flex;
 }
-.navbar.dark a{
+.navbar.dark a {
   color: var(--color-dark);
 }
-.navbar.dark a:hover{
+.navbar.dark a:hover {
   color: var(--color-deep);
 }
 /* footer style  */
@@ -394,6 +398,68 @@ footer {
   opacity: 1;
   display: flex;
 }
+.search {
+  display: flex;
+  gap: 10px;
+  border: 1px solid var(--color-deep);
+  padding: 10px;
+  border-radius: 10px;
+  margin-block: 20px;
+}
+.search input::placeholder {
+  color: var(--color-deep);
+}
+.search input {
+  flex: 1;
+  cursor: pointer;
+}
+.grid-2-2-1 .property-card {
+  width: 100%;
+}
+
+/* sidebar section  */
+.sidebar {
+  /* border: 1px solid; */
+  padding: 1px;
+}
+.btns {
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+  padding: 5px;
+  border-radius: 15px;
+  border: 1px solid var(--color-deep);
+  margin-block-end: 30px;
+}
+.btns .btn {
+  width: 100%;
+  border: 0;
+}
+.items,
+.price-range {
+  color: var(--color-dark);
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+.item {
+  font-weight: 400;
+  padding-block-start: 20px;
+  font-size: 18px;
+  margin-inline-start: 30px;
+}
+.range{
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+.price-range img{
+  margin-block: 10px;
+}
+.min span,
+.max span{
+  color: var(--color-gray);
+}
 /* FAQ style  */
 .faq {
   padding: 40px;
@@ -593,13 +659,13 @@ input::placeholder {
 }
 /* about section  */
 /* states style  */
-.states{
+.states {
   display: grid;
   place-items: center;
   gap: 10px;
-  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
-.state .title{
+.state .title {
   display: flex;
   padding: 10px;
   justify-content: center;
