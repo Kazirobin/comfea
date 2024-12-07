@@ -21,7 +21,7 @@
     grid-template-columns: 1fr;
     padding-inline: 40px;
     gap: 30px;
-    padding-block: 20px;
+    padding-block: 40px;
   }
   .grid-2-1-1 * {
     width: 100%;
@@ -89,7 +89,7 @@
     grid-template-columns: 1fr 1fr;
     padding-inline: 40px;
     gap: 30px;
-    padding-block: 20px;
+    padding-block: 40px;
   }
   .grid-2-1-1 * {
     width: 100%;
