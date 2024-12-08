@@ -1,6 +1,7 @@
 /* here i define some common grid layout  */
 @import url("./grid_layout.css");
 @import url("./blog.css");
+@import url("./faq.css");
 /* this css apply for large device  */
 @import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 
@@ -76,6 +77,9 @@ a.active {
 }
 .m-top-40 {
   margin-block-start: 40px;
+}
+.m-top-20 {
+  margin-block-start: 20px;
 }
 .w-full{
   width: 100%;

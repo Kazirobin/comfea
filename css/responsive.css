@@ -194,6 +194,7 @@
   }
   .tips__title{
     flex-direction: column;
+    padding-inline-start: 10px;
   }
   .tips-card-container {
     display: grid;
@@ -251,6 +252,19 @@
   .contact__details .news_latter{
     width: 100%;
   }
+  /* faq  */
+  .category__list{
+    display: none;
+  }
+  .faq.col{
+    padding: 5px;
+  }
+  .faq.col .text-center{
+    text-align: left;
+    width: 100%;
+
+  }
+
 }
 
 /* Medium Devices (landscape tablets, 768px to 991px) */
