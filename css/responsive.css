@@ -247,6 +247,10 @@
   .states{
     grid-template-columns: 1fr;
   }
+  /* contact style  */
+  .contact__details .news_latter{
+    width: 100%;
+  }
 }
 
 /* Medium Devices (landscape tablets, 768px to 991px) */
