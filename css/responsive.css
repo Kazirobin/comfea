@@ -264,7 +264,17 @@
     width: 100%;
 
   }
-
+/* contact section  */
+.contact__us{
+  flex-direction: column;
+}
+.from {
+  height: 400px;
+  width: 100%;
+}
+.name__input{
+  margin: 20px 0px;
+}
 }
 
 /* Medium Devices (landscape tablets, 768px to 991px) */

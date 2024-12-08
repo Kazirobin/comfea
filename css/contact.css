@@ -1,0 +1,35 @@
+.contact__us {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+.from {
+    height: 400px;
+    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.name {
+  display: flex;
+}
+.name .name__input {
+  width: 100%;
+}
+
+.number {
+  display: flex;
+}
+.text__area{
+    flex: 0 0 40%;
+}
+.check {
+  display: flex;
+}
+.address__cards {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 150px 170px;
+  gap: 10px;
+}
