@@ -1,5 +1,6 @@
 /* here i define some common grid layout  */
 @import url("./grid_layout.css");
+@import url("./blog.css");
 /* this css apply for large device  */
 @import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 
@@ -75,6 +76,17 @@ a.active {
 }
 .m-top-40 {
   margin-block-start: 40px;
+}
+.w-full{
+  width: 100%;
+}
+/* common flex class  */
+.flex {
+  display: flex;
+}
+.col {
+  display: flex;
+  flex-direction: column;
 }
 .navbar.dark .btn:hover,
 .btn {
@@ -448,16 +460,16 @@ footer {
   font-size: 18px;
   margin-inline-start: 30px;
 }
-.range{
+.range {
   font-size: 18px;
   display: flex;
   justify-content: space-between;
 }
-.price-range img{
+.price-range img {
   margin-block: 10px;
 }
 .min span,
-.max span{
+.max span {
   color: var(--color-gray);
 }
 /* FAQ style  */
@@ -511,7 +523,7 @@ footer {
   padding: 40px;
 }
 .tips-card-container {
-  column-gap: 40px;
+  column-gap: 24px;
 }
 .tips__title {
   padding-block-end: 40px;
@@ -538,13 +550,14 @@ footer {
 .tips-card .tips-card-img {
   width: 100%;
 }
-.tips-card .time {
+.time {
   display: flex;
   align-items: center;
   gap: 5px;
 }
 .clock {
   display: none;
+  align-items: center;
 }
 .time .clock {
   display: flex;
@@ -675,22 +688,21 @@ input::placeholder {
 }
 /* blog section  */
 /* contact style  */
-.contact.blog{
+.contact.blog {
   display: grid;
   grid-template-columns: 1fr;
   width: 100%;
-  
   place-items: center;
   text-align: center;
 }
-.contact.blog .contact__details h1.title{
+.contact.blog .contact__details h1.title {
   width: 100%;
   padding-block-start: 100px;
 }
-.contact.blog .contact__details p{
+.contact.blog .contact__details p {
   padding-block: 40px;
 }
-.contact__details .news_latter{
+.contact__details .news_latter {
   display: flex;
   background-color: var(--color-light);
   padding: 10px;
@@ -698,6 +710,6 @@ input::placeholder {
   margin-block-end: 100px;
   border-radius: 15px;
 }
-.contact__details .news_latter input{
+.contact__details .news_latter input {
   flex: 1;
 }

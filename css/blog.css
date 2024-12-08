@@ -1,0 +1,86 @@
+/*
+ .tips__blog .tips-card-container .tips-card
+ */
+ .tips__blog .tips-card-container {
+     display: grid;
+     gap: 24px;
+     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    }
+    .tips__blog.col{
+       padding: 0px ;
+        align-items: center;
+        justify-content: center;
+    }
+    .tips__banner{
+        display: grid;
+        grid-template-columns: 4fr 1.9fr;
+        padding: 10px;
+    }
+    .banner-2{
+        display: flex;
+        gap: 10px;
+    }
+    .banner-2 .banner__img{
+        width: 400px;
+        height: 428px;
+    }
+    .tips__banner .blogs .blog .blog__img{
+        height: 100px;
+    }
+    .banner-2 .banner__details{
+        justify-content: space-evenly;
+        height: 350px;
+    }
+    .blogs .blog{
+        display: flex;
+        gap: 10px;
+        padding: 5px;
+    }
+    .blog__details-2 .time .clock{
+        display: none;
+    }
+    .blog__details-2  .clock{
+        display: flex;
+    }
+    /* Responsive Styles */
+    
+    /* Extra Small Devices (phones, 599px and down) */
+    @media only screen and (max-width: 991px) {
+        .tips__banner .blogs{
+            display: none;
+        }
+        .tips__banner{
+            display: grid;
+            grid-template-columns:1fr;
+        }
+    }
+    
+    
+
+    @media only screen and (max-width: 767px) {
+        .banner-2{
+            flex-direction: column;
+        }
+        .banner-2 .banner__img{
+            width: 100%;
+        }
+        .banner-2 .banner__details{
+            height: auto;
+            gap: 20px;
+            padding-block: 10px;
+        }
+        .tips__blog .tips-card-container .tips-card{
+            flex-direction: column;
+        }
+        .tips__blog .tips-card-container .tips-card .tips-card-img{
+            width: 100%;
+        }
+        .tips__blog .tips-card-container .tips-card .tips-card__detail .time .clock{
+            display: flex;
+            align-items: center;
+        }
+        .tips__blog .tips-card-container .tips-card .tips-card__detail .clock{
+            display: none;
+        }
+
+    }

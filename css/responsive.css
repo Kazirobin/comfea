@@ -16,7 +16,7 @@
     font-size: 0.8rem;
   }
   .container {
-    border-inline: 0px solid #fff;
+    border-inline: 10px solid #fff;
     width: 100%;
     margin: auto;
   }
@@ -320,9 +320,7 @@
   .tips__blog {
     padding: 40px;
   }
-  .tips-card-container {
-    column-gap: 40px;
-  }
+ 
   .tips__title {
     padding-block-end: 40px;
   }
