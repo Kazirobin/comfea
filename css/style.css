@@ -6,6 +6,7 @@
 @import url("./blog.css");
 @import url("./faq.css");
 @import url("./contact.css");
+@import url("./padding__mobile.css");
 /* this css apply for large device  */
 @import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 
@@ -98,6 +99,7 @@ a.active {
 }
 /* navbar style  */
 .navbar.dark .btn:hover,
+.btn.active,
 .btn {
   padding: 10px 18px;
   font-weight: 700;
@@ -108,7 +110,8 @@ a.active {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
-.navbar.dark .btn,
+.btn,
+.btn.active,
 .btn:hover {
   background-color: var(--color-dark);
   color: var(--color-white);
@@ -645,6 +648,7 @@ footer {
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 22px;
+  aspect-ratio: 1/0.5;
 }
 .contact__details {
   width: inherit;

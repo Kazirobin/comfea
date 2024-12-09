@@ -1,0 +1,56 @@
+/* Responsive Styles */
+
+/* Extra Small Devices (phones, 599px and down) */
+@media only screen and (max-width: 599px) {
+    .discover{
+        padding: 20px !important;
+    }
+    .property-card__img{
+        margin: 0px !important;
+    }
+    .property-card-container{
+        grid-template-columns: 1fr !important;
+    }
+    .faq{
+        padding: 20px !important;
+    }
+    .tips__blog{
+        padding: 20px !important;
+    }
+    .pagination{
+        padding: 0px !important;
+    }
+    .contact{
+        aspect-ratio: 1/0.8 !important;
+    }
+    .grid-2-1-1{
+        padding: 20px !important;
+    }
+    .tips__blog.col{
+        padding: 10px !important;
+    }
+    .tips__title.col{
+        padding-inline-start: 0px !important;
+    }
+    .address__card{
+        margin: 20px;
+    }
+}
+
+/* Small Devices (portrait tablets and large phones, 600px to 767px) */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+
+}
+
+/* Medium Devices (landscape tablets, 768px to 991px) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+}
+
+/* Large Devices (laptops/desktops, 992px to 1199px) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Extra Large Devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+}

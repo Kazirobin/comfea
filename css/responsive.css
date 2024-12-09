@@ -187,7 +187,7 @@
     width: 100%;
   }
   .question {
-    padding-inline-start: 0px;
+    padding-inline-start: 10px;
   }
   /* tips style  */
   .tips__blog {
