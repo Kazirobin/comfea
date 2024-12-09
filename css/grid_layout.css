@@ -14,7 +14,6 @@
 
 /* Extra Small Devices (phones, 599px and down) */
 @media only screen and (max-width: 599px) {
-
   .grid-auto-150 {
     grid-template-columns: 1fr 1fr;
   }
@@ -40,7 +39,7 @@
     height: 400px;
     margin-block-end: 10px;
   }
-  .sidebar{
+  .sidebar {
     display: none;
   }
 
@@ -65,7 +64,7 @@
     display: grid;
     grid-template-columns: 1fr;
   }
-  .sidebar{
+  .sidebar {
     display: none;
   }
   .grid-2-2-1 {
@@ -99,7 +98,7 @@
     grid-template-columns: repeat(2, 1fr);
     align-items: end;
   }
-  .sidebar{
+  .sidebar {
     display: none;
   }
 

@@ -24,31 +24,39 @@
     <link rel="stylesheet" href="./css/responsive.css" />
   </head>
   <body>
-       <!-- navbar section  -->
-       <div class="container">
-        <nav class="navbar dark">
-          <div class="logo">
-            <a href="#home">
-              <img class="logo__light" src="./images/nav/logo-dark.png" alt="" />
-            </a>
+    <!-- navbar section  -->
+    <div class="container">
+      <input type="checkbox" name="" id="nav__check" />
+
+      <nav class="navbar dark">
+        <div class="logo">
+          <a href="#home">
+            <img class="logo__light" src="./images/nav/logo-dark.png" alt="" />
+          </a>
+          <label for="nav__check">
             <div class="hamburger">
-              <img class="open" src="./images/icons/hamburger-dark.svg" alt="" />
+              <img
+                class="open"
+                src="./images/icons/hamburger-dark.svg"
+                alt=""
+              />
               <img class="close" src="./images/icons/close.svg" alt="" />
             </div>
-          </div>
-          <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About us</a></li>
-            <li><a href="./property.html">Property</a></li>
-            <li><a href="./agent.html">Agent</a></li>
-            <li><a href="./blog.html">Blog</a></li>
-            <li><a href="./faq.html">FAQ's</a></li>
-          </ul>
-          <a href="./contact.html">
-            <button class="btn">Contact Us</button>
-          </a>
-        </nav>
-      </div>
+          </label>
+        </div>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About us</a></li>
+          <li><a href="./property.html">Property</a></li>
+          <li><a href="./agent.html">Agent</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./faq.html">FAQ's</a></li>
+        </ul>
+        <a href="./contact.html">
+          <button class="btn">Contact Us</button>
+        </a>
+      </nav>
+    </div>
     <!-- property title  -->
     <div class="container">
       <div class="grid-2-2-1">
@@ -107,10 +115,13 @@
           </div>
         </div>
         <div class="blogs">
-
           <!-- blog 1  -->
           <div class="blog">
-            <img src="./images/blog/banner/bannar_blog_1.png" class="blog__img" alt="" />
+            <img
+              src="./images/blog/banner/bannar_blog_1.png"
+              class="blog__img"
+              alt=""
+            />
             <div class="blog__details-2">
               <div class="time">
                 <p>May 16, 2024</p>
@@ -129,7 +140,11 @@
 
           <!-- blog 1  -->
           <div class="blog">
-            <img src="./images/blog/banner/bannar_blog_2.png" class="blog__img" alt="" />
+            <img
+              src="./images/blog/banner/bannar_blog_2.png"
+              class="blog__img"
+              alt=""
+            />
             <div class="blog__details-2">
               <div class="time">
                 <p>May 16, 2024</p>
@@ -148,7 +163,11 @@
 
           <!-- blog 1  -->
           <div class="blog">
-            <img src="./images/blog/banner/bannar_blog_3.png" class="blog__img" alt="" />
+            <img
+              src="./images/blog/banner/bannar_blog_3.png"
+              class="blog__img"
+              alt=""
+            />
             <div class="blog__details-2">
               <div class="time">
                 <p>May 16, 2024</p>
@@ -164,8 +183,6 @@
               </div>
             </div>
           </div>
-
-
         </div>
       </div>
       <!-- tips section  -->
@@ -445,9 +462,7 @@
     <div class="container">
       <div
         class="contact blog"
-        style="
-          background-image: url('./images/home/property_3/contact_bg.png');
-        "
+        style="background-image: url('./images/home/property_3/contact_bg.png')"
       >
         <div class="contact__details">
           <h1 class="title">Ready to find your dream home? Let us help!</h1>
@@ -464,80 +479,78 @@
       </div>
     </div>
 
-   <!-- footer section  -->
-   <div class="container">
-    <footer>
-      <div class="footer__top">
-        <div class="details">
-          <div class="title">
-            <h1>
-              We are an experienced real estate agency based in United Kingdom
-            </h1>
-          </div>
-          <div class="address__card">
-            <div class="card">
-              <p>General Enquiries</p>
-              <p class="light">info@example.com</p>
+    <!-- footer section  -->
+    <div class="container">
+      <footer>
+        <div class="footer__top">
+          <div class="details">
+            <div class="title">
+              <h1>
+                We are an experienced real estate agency based in United Kingdom
+              </h1>
             </div>
-            <div class="card">
-              <p>Phone</p>
-              <p class="light">+1 555-0123-456</p>
-            </div>
-            <div class="card">
-              <p>Office</p>
-              <p class="light">789 Elm Street, Springfield, Illinois 62704</p>
-            </div>
-          </div>
-        </div>
-        <div class="navigate">
-          <p class="deep">Navigation</p>
-          <div class="links">
-            <div class="links__box">
-              <a href="./index.html">Home</a>
-              <a href="./about.html">About Us</a>
-              <a href="./property.html">Listing Product</a>
-            </div>
-            <div class="links__box">
-              <a href="./faq.html">FAQ's</a>
-              <a href="./blog.html">Blog</a>
-              <a href="./agent.html">Agent</a>
+            <div class="address__card">
+              <div class="card">
+                <p>General Enquiries</p>
+                <p class="light">info@example.com</p>
+              </div>
+              <div class="card">
+                <p>Phone</p>
+                <p class="light">+1 555-0123-456</p>
+              </div>
+              <div class="card">
+                <p>Office</p>
+                <p class="light">789 Elm Street, Springfield, Illinois 62704</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="navigate">
-          <p class="deep">Follow Us</p>
-          <div class="links">
-            <div class="links__box">
-              <a href="#">Facebook</a>
-              <a href="#">Instagram</a>
-              <a href="#">Twitter</a>
-              <a href="#">Behance</a>
-              <a href="#">Dribble</a>
+          <div class="navigate">
+            <p class="deep">Navigation</p>
+            <div class="links">
+              <div class="links__box">
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About Us</a>
+                <a href="./property.html">Listing Product</a>
+              </div>
+              <div class="links__box">
+                <a href="./faq.html">FAQ's</a>
+                <a href="./blog.html">Blog</a>
+                <a href="./agent.html">Agent</a>
+              </div>
+            </div>
+          </div>
+          <div class="navigate">
+            <p class="deep">Follow Us</p>
+            <div class="links">
+              <div class="links__box">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+                <a href="#">Behance</a>
+                <a href="#">Dribble</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="footer__bottom">
-        <div class="logo">
-          <a href="#home">
-            <img src="./images/nav/logo-light.png" alt="" srcset="" />
-          </a>
-        </div>
-        <div class="copyright">
-          <p>© 2023-2024, All Rights Reserved</p>
-        </div>
-        <div class="top">
-          <button>
-            <a href="./index.html">
-              <p class="light">Back to top</p>
-              <img src="./images/icons/back-to-top.svg" alt="" />
+        <div class="footer__bottom">
+          <div class="logo">
+            <a href="#home">
+              <img src="./images/nav/logo-light.png" alt="" srcset="" />
             </a>
-          </button>
+          </div>
+          <div class="copyright">
+            <p>© 2023-2024, All Rights Reserved</p>
+          </div>
+          <div class="top">
+            <button>
+              <a href="./index.html">
+                <p class="light">Back to top</p>
+                <img src="./images/icons/back-to-top.svg" alt="" />
+              </a>
+            </button>
+          </div>
         </div>
-      </div>
-    </footer>
-  </div>
-  
-    <script src="./js/script.js"></script>
+      </footer>
+    </div>
   </body>
 </html>

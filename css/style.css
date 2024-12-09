@@ -85,7 +85,7 @@ a.active {
 .m-top-20 {
   margin-block-start: 20px;
 }
-.w-full{
+.w-full {
   width: 100%;
 }
 /* common flex class  */
@@ -96,6 +96,7 @@ a.active {
   display: flex;
   flex-direction: column;
 }
+/* navbar style  */
 .navbar.dark .btn:hover,
 .btn {
   padding: 10px 18px;
@@ -139,11 +140,15 @@ a.active {
   display: none;
 }
 /* navbar dark  */
-.dark.navbar {
+/* .dark.navbar {
   height: 80px;
-}
-.dark.navbar.active {
+} */
+#nav__check:checked .dark.navbar
+/* .dark.navbar.active  */ {
   height: 80vh;
+  background-color: var(--color-white);
+  z-index: 5;
+  display: flex;
 }
 .dark .logo {
   height: auto;
@@ -159,6 +164,10 @@ a.active {
 }
 .navbar.dark a:hover {
   color: var(--color-deep);
+}
+
+#nav__check {
+  display: none;
 }
 /* footer style  */
 /* padding margin gap  */

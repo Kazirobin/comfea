@@ -4,8 +4,8 @@
   height: auto;
 }
 .from {
-    height: 400px;
-    justify-content: space-between;
+  height: 400px;
+  justify-content: space-between;
   display: flex;
   flex-direction: column;
   width: 50%;
@@ -20,8 +20,8 @@
 .number {
   display: flex;
 }
-.text__area{
-    flex: 0 0 40%;
+.text__area {
+  flex: 0 0 40%;
 }
 .check {
   display: flex;

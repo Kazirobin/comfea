@@ -30,6 +30,7 @@
         class="banner"
         style="background-image: url('./images/home/Hero.png')"
       >
+        <input type="checkbox" name="" id="nav__check" />
         <nav class="navbar">
           <div class="logo">
             <a href="./index.html">
@@ -40,10 +41,12 @@
               />
               <img class="logo__dark" src="./images/nav/logo-dark.png" alt="" />
             </a>
-            <div class="hamburger">
-              <img class="open" src="./images/icons/hambarger.svg" alt="" />
-              <img class="close" src="./images/icons/close.svg" alt="" />
-            </div>
+            <label for="nav__check">
+              <div class="hamburger">
+                <img class="open" src="./images/icons/hambarger.svg" alt="" />
+                <img class="close" src="./images/icons/close.svg" alt="" />
+              </div>
+            </label>
           </div>
           <ul>
             <li><a href="./index.html">Home</a></li>
@@ -52,13 +55,9 @@
             <li><a href="./agent.html">Agent</a></li>
             <li><a href="./blog.html">Blog</a></li>
             <li><a href="./faq.html">FAQ's</a></li>
-
           </ul>
           <a href="./contact.html">
-
-            <button class="btn">
-              Contact Us
-            </button>
+            <button class="btn">Contact Us</button>
           </a>
         </nav>
         <div class="banner__content">
@@ -1073,9 +1072,5 @@
         </div>
       </footer>
     </div>
-
-  
-
-    <script src="./js/script.js"></script>
   </body>
 </html>

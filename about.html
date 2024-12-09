@@ -24,31 +24,39 @@
     <link rel="stylesheet" href="./css/responsive.css" />
   </head>
   <body>
-      <!-- navbar section  -->
-      <div class="container">
-        <nav class="navbar dark">
-          <div class="logo">
-            <a href="#home">
-              <img class="logo__light" src="./images/nav/logo-dark.png" alt="" />
-            </a>
+    <!-- navbar section  -->
+    <div class="container">
+      <input type="checkbox" name="" id="nav__check" />
+
+      <nav class="navbar dark">
+        <div class="logo">
+          <a href="#home">
+            <img class="logo__light" src="./images/nav/logo-dark.png" alt="" />
+          </a>
+          <label for="nav__check">
             <div class="hamburger">
-              <img class="open" src="./images/icons/hamburger-dark.svg" alt="" />
+              <img
+                class="open"
+                src="./images/icons/hamburger-dark.svg"
+                alt=""
+              />
               <img class="close" src="./images/icons/close.svg" alt="" />
             </div>
-          </div>
-          <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About us</a></li>
-            <li><a href="./property.html">Property</a></li>
-            <li><a href="./agent.html">Agent</a></li>
-            <li><a href="./blog.html">Blog</a></li>
-            <li><a href="./faq.html">FAQ's</a></li>
-          </ul>
-          <a href="./contact.html">
-            <button class="btn">Contact Us</button>
-          </a>
-        </nav>
-      </div>
+          </label>
+        </div>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About us</a></li>
+          <li><a href="./property.html">Property</a></li>
+          <li><a href="./agent.html">Agent</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./faq.html">FAQ's</a></li>
+        </ul>
+        <a href="./contact.html">
+          <button class="btn">Contact Us</button>
+        </a>
+      </nav>
+    </div>
 
     <!-- property section  -->
     <div class="container">
@@ -500,7 +508,5 @@
         </div>
       </footer>
     </div>
-
-    <script src="./js/script.js"></script>
   </body>
 </html>
