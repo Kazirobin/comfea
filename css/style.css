@@ -1,4 +1,7 @@
+@import url("./satoshi.css");
+
 /* here i define some common grid layout  */
+
 @import url("./grid_layout.css");
 @import url("./blog.css");
 @import url("./faq.css");
@@ -7,7 +10,7 @@
 @import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 
 :root {
-  --primary-font: "Inter";
+  --primary-font: "Satoshi-Regular", Arial, Helvetica, sans-serif;
   --color-white: #fff;
   --color-light: #fcfcfc;
   --color-dark: #18181b;
